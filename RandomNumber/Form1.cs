@@ -33,7 +33,7 @@ namespace RandomNumber
 
         private void NumOfNums_ValueChanged(object sender, EventArgs e)
         {
-            Reset.Enabled = true;
+            //Reset.Enabled = true;
         }
 
         private void NumOfNumLabel_Click(object sender, EventArgs e)
@@ -69,14 +69,20 @@ namespace RandomNumber
                 }
                 else
                 {
-                    int[] Num = new int[NumOfNumsThing];
-                    Feature.GetRandomNum RandomNum = new Feature.GetRandomNum();
-                    Num = RandomNum.getRandomNum(NumOfNumsThing, MinNumThing, MaxNumThing);
-                    string FinNum = Feature.GetString(Num, NumOfNumsThing);
-                    Feature feature = new Feature();
-                    this.OutNumber.Items.Add(FinNum);
-                    //Interaction.InputBox("提示信息", "标题", FinNum, 15, 20);
-                    
+                    if (MaxNumThing == 0 && MinNumThing == 0 && NumOfNumsThing == 0)
+                    {
+                        MessageBox.Show("Please Change One Value.", "Wornning");
+                    }
+                    else
+                    {
+                        int[] Num = new int[NumOfNumsThing];
+                        Feature.GetRandomNum RandomNum = new Feature.GetRandomNum();
+                        Num = RandomNum.getRandomNum(NumOfNumsThing, MinNumThing, MaxNumThing);
+                        string FinNum = Feature.GetString(Num, NumOfNumsThing);
+                        Feature feature = new Feature();
+                        this.OutNumber.Items.Add(FinNum);
+                        //Interaction.InputBox("提示信息", "标题", FinNum, 15, 20);  
+                    }                  
                 }
             }
         }
@@ -107,8 +113,10 @@ namespace RandomNumber
 
         private void Infor_Click(object sender, EventArgs e)
         {
+            Infor.Enabled = false;
             Form2 form2 = new Form2();
             form2.Show();
+            
         }
 
         private void Close_Click(object sender, EventArgs e)
