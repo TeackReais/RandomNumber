@@ -33,7 +33,7 @@ namespace RandomNumber
 
         private void NumOfNums_ValueChanged(object sender, EventArgs e)
         {
-            //Reset.Enabled = true;
+            Reset.Enabled = true;
         }
 
         private void NumOfNumLabel_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace RandomNumber
                 }
                 else
                 {
-                    if (MaxNumThing == 0 && MinNumThing == 0 && NumOfNumsThing == 0)
+                    if (MaxNumThing == 0 && MinNumThing == 0 && NumOfNumsThing == 1)
                     {
                         MessageBox.Show("Please Change One Value.", "Wornning");
                     }
@@ -124,6 +124,10 @@ namespace RandomNumber
             Application.Exit();
         }
 
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            Infor.Enabled = true;
+        }
     }
     public class FormFeature
     {

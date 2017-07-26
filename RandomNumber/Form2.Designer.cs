@@ -33,6 +33,8 @@
             this.CompanyThing = new System.Windows.Forms.Label();
             this.Web = new System.Windows.Forms.Label();
             this.WebThing = new System.Windows.Forms.Label();
+            this.Versionlabel = new System.Windows.Forms.Label();
+            this.Version = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Company
@@ -72,11 +74,32 @@
             this.WebThing.TabIndex = 3;
             this.WebThing.Text = "https://github.com/TeackReais";
             // 
+            // Versionlabel
+            // 
+            this.Versionlabel.AutoSize = true;
+            this.Versionlabel.Location = new System.Drawing.Point(44, 154);
+            this.Versionlabel.Name = "Versionlabel";
+            this.Versionlabel.Size = new System.Drawing.Size(53, 12);
+            this.Versionlabel.TabIndex = 4;
+            this.Versionlabel.Text = "Version:";
+            // 
+            // Version
+            // 
+            this.Version.AutoSize = true;
+            this.Version.Location = new System.Drawing.Point(103, 154);
+            this.Version.Name = "Version";
+            this.Version.Size = new System.Drawing.Size(59, 12);
+            this.Version.TabIndex = 5;
+            this.Version.Text = "(Version)";
+            this.Version.Click += new System.EventHandler(this.Version_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.Version);
+            this.Controls.Add(this.Versionlabel);
             this.Controls.Add(this.WebThing);
             this.Controls.Add(this.Web);
             this.Controls.Add(this.CompanyThing);
@@ -97,5 +120,7 @@
         private System.Windows.Forms.Label CompanyThing;
         private System.Windows.Forms.Label Web;
         private System.Windows.Forms.Label WebThing;
+        private System.Windows.Forms.Label Versionlabel;
+        private System.Windows.Forms.Label Version;
     }
 }

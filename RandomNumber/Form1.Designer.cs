@@ -171,6 +171,7 @@
             this.Name = "Form1";
             this.Text = "RandomNumber";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.Form1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.NumOfNums)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinNumber)).EndInit();

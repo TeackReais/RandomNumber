@@ -16,6 +16,7 @@ namespace RandomNumber
         {
             InitializeComponent();
             Company.Text = Application.CompanyName;
+            Version.Text = Application.ProductVersion;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -29,6 +30,11 @@ namespace RandomNumber
         }
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
+        }
+
+        private void Version_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
