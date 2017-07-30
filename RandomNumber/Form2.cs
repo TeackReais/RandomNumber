@@ -30,11 +30,18 @@ namespace RandomNumber
         }
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
+
         }
 
         private void Version_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Info.Enabled = true;
         }
     }
 }

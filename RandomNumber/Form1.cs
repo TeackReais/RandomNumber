@@ -81,7 +81,7 @@ namespace RandomNumber
                         string FinNum = Feature.GetString(Num, NumOfNumsThing);
                         Feature feature = new Feature();
                         this.OutNumber.Items.Add(FinNum);
-                        //Interaction.InputBox("提示信息", "标题", FinNum, 15, 20);  
+                        Interaction.InputBox("提示信息", "标题", FinNum, 15, 20);  
                     }                  
                 }
             }
@@ -113,7 +113,7 @@ namespace RandomNumber
 
         private void Infor_Click(object sender, EventArgs e)
         {
-            Infor.Enabled = false;
+            Info.Enabled = false;
             Form2 form2 = new Form2();
             form2.Show();
             
@@ -126,7 +126,7 @@ namespace RandomNumber
 
         private void Form1_Click(object sender, EventArgs e)
         {
-            Infor.Enabled = true;
+            Info.Enabled = true;
         }
     }
     public class FormFeature

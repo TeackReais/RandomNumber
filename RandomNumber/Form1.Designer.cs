@@ -38,7 +38,7 @@
             this.Confirm = new System.Windows.Forms.Button();
             this.Reset = new System.Windows.Forms.Button();
             this.OutNumber = new System.Windows.Forms.ListBox();
-            this.Infor = new System.Windows.Forms.Button();
+            this.Info = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NumOfNums)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxNumber)).BeginInit();
@@ -129,15 +129,15 @@
             this.OutNumber.TabIndex = 18;
             this.OutNumber.SelectedIndexChanged += new System.EventHandler(this.OutNumber_SelectedIndexChanged);
             // 
-            // Infor
+            // Info
             // 
-            this.Infor.Location = new System.Drawing.Point(86, 200);
-            this.Infor.Name = "Infor";
-            this.Infor.Size = new System.Drawing.Size(75, 23);
-            this.Infor.TabIndex = 24;
-            this.Infor.Text = "Infor";
-            this.Infor.UseVisualStyleBackColor = true;
-            this.Infor.Click += new System.EventHandler(this.Infor_Click);
+            this.Info.Location = new System.Drawing.Point(86, 200);
+            this.Info.Name = "Info";
+            this.Info.Size = new System.Drawing.Size(75, 23);
+            this.Info.TabIndex = 24;
+            this.Info.Text = "Info";
+            this.Info.UseVisualStyleBackColor = true;
+            this.Info.Click += new System.EventHandler(this.Infor_Click);
             // 
             // Close
             // 
@@ -157,7 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 296);
             this.Controls.Add(this.Close);
-            this.Controls.Add(this.Infor);
+            this.Controls.Add(this.Info);
             this.Controls.Add(this.OutNumber);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.Confirm);
@@ -190,8 +190,8 @@
         private System.Windows.Forms.Button Confirm;
         private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.ListBox OutNumber;
-        private System.Windows.Forms.Button Infor;
         private System.Windows.Forms.Button Close;
+        public System.Windows.Forms.Button Info;
     }
 }
 
